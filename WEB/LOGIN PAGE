@@ -1,0 +1,84 @@
+1.ONLINE BOOK STORE
+AIM:
+To design a web page for online book store
+HOME PAGE
+
+SOURCE CODE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<style>
+body {
+font-family: Arial, sans-serif; margin: 0;
+padding: 0; display: flex;
+flex-direction: column; min-height: 100vh; background-color: #f4f4f4;
+}
+.header {
+background-color: #333; color: white;
+ 
+padding: 15px; text-align: center;
+}
+.header img { height: 50px;
+}
+.header h1 { margin: 0;
+}
+.nav-bar {
+margin-top: 10px;
+}
+.nav-bar a { color: white;
+text-decoration: none; padding: 10px 20px; margin: 0 10px;
+font-size: 16px;
+}
+.nav-bar a:hover { background-color: #444; border-radius: 4px;
+}
+.content-wrapper { display: flex; flex: 1;
+}
+.sidebar {
+ 
+width: 200px;
+background-color: #eaeaea; padding: 20px;
+}
+.sidebar a { display: block; padding: 10px; margin: 10px 0;
+color: #333;
+text-decoration: none; background-color: white; border-radius: 4px;
+}
+.sidebar a:hover { background-color: #bbb;
+}
+.main-content { flex: 1; padding: 20px;
+background-color: #fff;
+} </style>
+</head>
+<body>
+<div class="header">
+<img src="logo.png" alt="Logo"> <!-- Replace with your logo --><br><br>
+<h1>ONLINE BOOK STORE</h1><br>
+<div class="nav-bar">
+<a href="homepage.html" target="main-content">Home</a>
+ 
+<a href="login.html" target="main-content">Login</a>
+<a href="registration.html" target="main-content">Registration</a>
+<a href="catalogue.html" target="main-content">Catalogue</a>
+<a href="cart.html" target="main-content">Cart</a>
+</div>
+</div>
+<div class="content-wrapper">
+<div class="sidebar">
+<a href="cse_catalogue.html" >CSE</a>
+<a href="ece_catalogue.html">ECE</a>
+<a href="eee_catalogue.html">EEE</a>
+<a href="civil_catalogue.html">CIVIL</a>
+</div>
+<div class="main-content" id="main-content">
+<h2 style="font-size: 20px;">Welcome to the Online Bookstore</h2><br><br>
+<p style="font-size: 30px;">Here you can find various books from different departments like CSE, ECE, EEE, and CIVIL.<br> Select a department from the left menu to view the catalogue of books available for that department.</p>
+</div>
+</div>
+</body>
+</html>
+ 
+ 
+ 
