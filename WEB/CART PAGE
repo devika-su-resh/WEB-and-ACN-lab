@@ -1,0 +1,92 @@
+5.CART PAGE
+SOURCE CODE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart Page</title>
+<style>
+body {
+font-family: Arial, sans-serif; margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+}
+.header {
+background-color:#333;; color: white;
+padding: 10px 20px; text-align: center;
+}
+.nav {
+text-align: center; margin-top: 10px;
+background-color: #fffafa; padding: 10px;
+ 
+}
+.nav a {
+color: rgb(0, 0, 0); text-decoration: none; margin: 0 20px;
+}
+.container { margin: 20px;
+}
+table {
+width: 100%;
+border-collapse: collapse; margin-top: 20px;
+}
+table, th, td {
+border: 1px solid #ccc;
+}
+th, td {
+padding: 12px; text-align: left;
+}
+th {
+background-color: #f2f2f2;
+}
+.total {
+margin-top: 20px; text-align: right; font-size: 18px; font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img src="logo.png" alt="Logo" height="50"> <!-- Replace with your logo -->
+<h1>ONLINE BOOK STORE</h1>
+</div>
+<div class="nav">
+<a href="home.html">Home</a>
+<a href="login.html">Login</a>
+<a href="registration.html">Registration</a>
+<a href="catalogue.html">Catalogue</a>
+<a href="cart.html">Cart</a>
+</div>
+<div class="container">
+<h2>Your Cart</h2>
+<table>
+<thead>
+<tr>
+<th>Book Name</th>
+<th>Price</th>
+<th>Quantity</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSE Java</td>
+<td>$35.5</td>
+<td>2</td>
+<td>$70</td>
+</tr>
+<tr>
+<td>ECE XML Bible</td>
+<td>$40.5</td>
+<td>1</td>
+<td>$40.5</td>
+</tr>
+</tbody>
+</table>
+<div class="total">
+<p>Total Amount: $110.5</p>
+</div>
+</div>
+</body>
+</html>
+ 
