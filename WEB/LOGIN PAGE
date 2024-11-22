@@ -1,0 +1,114 @@
+2.LOGIN PAGE
+
+
+SOURCE CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+body {
+font-family: Arial, sans-serif; margin: 0;
+padding: 0;
+background-color: #f4f4f4; display: flex;
+flex-direction: column; min-height: 100vh;
+}
+.header {
+background-color: #333; color: white;
+padding: 15px; text-align: center;
+}
+.header img {
+ 
+height: 50px;
+}
+.header h1 { margin: 0;
+}
+.nav-bar {
+margin-top: 10px;
+}
+.nav-bar a { color: white;
+text-decoration: none; padding: 10px 20px; margin: 0 10px;
+font-size: 16px;
+}
+.nav-bar a:hover { background-color: #444; border-radius: 4px;
+}
+.content-wrapper { display: flex; flex: 1;
+}
+.sidebar { width: 200px;
+background-color: #eaeaea; padding: 20px;
+height: 100vh; /* Make sidebar full height */
+ 
+box-sizing: border-box;
+}
+.sidebar a { display: block; padding: 10px; margin: 10px 0;
+color: #333;
+text-decoration: none; background-color: #ffffff; border-radius: 4px;
+}
+.sidebar a:hover { background-color: #bbb;
+}
+.login-form { flex: 1; padding: 20px;
+background-color: #fff; border-radius: 4px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-form h2 { margin-top: 0;
+}
+.login-form label { display: block; margin: 10px 0 5px; font-size: 14px;
+ 
+color: #333;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] { width: 100%;
+padding: 10px; margin: 5px 0 15px; border: 1px solid #ccc; border-radius: 4px;
+}
+.login-form button { padding: 10px 20px;
+background-color: #4CAF50; color: white;
+border: none; border-radius: 4px; cursor: pointer;
+}
+.login-form button:hover { background-color: #45a049;
+}
+.login-form input[type="reset"] { padding: 10px 20px; background-color: #f44336; color: white;
+border: none; border-radius: 4px; cursor: pointer;
+ 
+}
+.login-form input[type="reset"]:hover { background-color: #e53935;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img src="logo.png" alt="Logo"> br><br>
+<h1>ONLINE BOOK STORE</h1><BR>
+<div class="nav-bar">
+<a href="homepage.html" target="main-content">Home</a>
+<a href="login.html" target="main-content">Login</a>
+<a href="registration.html" target="main-content">Registration</a>
+<a href="catalogue.html" target="main-content">Catalogue</a>
+<a href="cart.html" target="main-content">Cart</a>
+</div>
+</div>
+<div class="content-wrapper">
+<div class="sidebar">
+<a href="cse_catalogue.html" >CSE</a>
+<a href="ece_catalogue.html" >ECE</a>
+<a href="eee_catalogue.html" >EEE</a>
+<a href="civil_catalogue.html">CIVIL</a>
+</div>
+<div class="login-form">
+<h2>Login</h2><br>
+<form action="login_process.html" method="POST">
+ 
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+<button type="submit">Submit</button>
+<input type="reset" value="Reset">
+
+
+</form>
+</div>
+</div>
+</body>
+</html>
